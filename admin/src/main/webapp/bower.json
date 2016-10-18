@@ -1,0 +1,21 @@
+{
+  "name": "sat-admin",
+  "homepage": "https://github.com/lhn1028/sat",
+  "authors": [
+    "Shawn Lee <lhn1028@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "AdminLTE": "adminlte#^2.3.6"
+  }
+}

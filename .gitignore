@@ -3,3 +3,6 @@
 .settings/
 .classpath
 target/
+
+### Bower
+bower_components
