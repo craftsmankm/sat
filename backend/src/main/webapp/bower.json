@@ -16,6 +16,12 @@
     "tests"
   ],
   "devDependencies": {
-    "AdminLTE": "adminlte#^2.3.7"
+    "AdminLTE": "adminlte#2.3.7"
+  },
+  "dependencies": {
+    "jquery": "2.2.3",
+    "bootstrap": "3.3.6",
+    "font-awesome": "fontawesome#4.5.0",
+    "Ionicons": "ionicons#2.0.1"
   }
 }
