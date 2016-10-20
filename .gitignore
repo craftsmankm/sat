@@ -6,3 +6,7 @@ target/
 
 ### Bower
 bower_components
+
+### Netbeans
+nb-configuration.xml
+.netbeans.xml

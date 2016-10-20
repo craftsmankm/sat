@@ -19,9 +19,13 @@
     "AdminLTE": "adminlte#2.3.7"
   },
   "dependencies": {
-    "jquery": "2.2.3",
-    "bootstrap": "3.3.6",
     "font-awesome": "fontawesome#4.5.0",
-    "Ionicons": "ionicons#2.0.1"
+    "Ionicons": "ionicons#2.0.1",
+    "html5shiv": "3.7.3",
+    "respond": "1.4.2",
+    "requirejs": "^2.3.2",
+    "domReady": "requirejs-domready#^2.0.1",
+    "text": "requirejs-text#^2.0.15",
+    "i18n": "requirejs-i18n#^2.0.6"
   }
 }
