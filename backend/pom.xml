@@ -6,9 +6,8 @@
 		<artifactId>sat</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>admin</artifactId>
+	<artifactId>backend</artifactId>
 	<packaging>war</packaging>
-	<description>Web管理端</description>
 
 	<build>
 		<plugins>
@@ -19,6 +18,15 @@
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
+			</plugin>
+			<!-- Tomcat 插件 -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<!-- Tomcat 7/8 发布配置 mvn tomcat7:redeploy -->
+				<!-- <configuration> <url>http://wangyu001.vicp.cc:8080/manager/text</url> 
+					<username>admin</username> <password>jr2015</password> <path>/admins</path> 
+					</configuration> -->
 			</plugin>
 		</plugins>
 	</build>

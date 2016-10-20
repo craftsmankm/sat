@@ -8,7 +8,8 @@
 	<description>Spring 应用程序的模板</description>
 
 	<modules>
-		<module>admin</module>
+
+	<module>backend</module>
 	</modules>
 
 
