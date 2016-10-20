@@ -513,7 +513,7 @@ define(["bootstrap", "jquery-slimscroll", "fastclick"], function () {
      * @type plugin
      * @usage $("#box-widget").boxRefresh( options );
      */
-    (function ($) {
+    function _initCustomPlugins() {
 
         "use strict";
 
@@ -580,7 +580,8 @@ define(["bootstrap", "jquery-slimscroll", "fastclick"], function () {
 
         };
 
-    })(jQuery);
+    }
+    ;
 
     /*
      * EXPLICIT BOX CONTROLS
@@ -593,8 +594,7 @@ define(["bootstrap", "jquery-slimscroll", "fastclick"], function () {
      * @usage $("#box-widget").toggleBox();
      * @usage $("#box-widget").removeBox();
      */
-    (function ($) {
-
+    function _initBoxControls() {
         'use strict';
 
         $.fn.activateBox = function () {
@@ -610,8 +610,7 @@ define(["bootstrap", "jquery-slimscroll", "fastclick"], function () {
             var button = $($.AdminLTE.boxWidget.selectors.remove, this);
             $.AdminLTE.boxWidget.remove(button);
         };
-
-    })(jQuery);
+    }
 
     /*
      * TODO LIST CUSTOM PLUGIN
@@ -621,8 +620,7 @@ define(["bootstrap", "jquery-slimscroll", "fastclick"], function () {
      * @type plugin
      * @usage $("#todo-widget").todolist( options );
      */
-    (function ($) {
-
+    function _initTodoList() {
         'use strict';
 
         $.fn.todolist = function (options) {
@@ -665,7 +663,7 @@ define(["bootstrap", "jquery-slimscroll", "fastclick"], function () {
                 }
             });
         };
-    }(jQuery));
+    }
 
     var index = {
         render: function () {
@@ -750,6 +748,10 @@ define(["bootstrap", "jquery-slimscroll", "fastclick"], function () {
                 });
 
             });
+
+            _initCustomPlugins();
+            _initBoxControls();
+            _initTodoList();
         }
     };
 

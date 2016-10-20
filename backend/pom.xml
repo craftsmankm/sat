@@ -1,33 +1,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.craftsmen</groupId>
-		<artifactId>sat</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<artifactId>backend</artifactId>
-	<packaging>war</packaging>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.craftsmen</groupId>
+        <artifactId>sat</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>backend</artifactId>
+    <packaging>war</packaging>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<!-- 忽略web.xml文件 -->
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-			</plugin>
-			<!-- Tomcat 插件 -->
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<!-- Tomcat 7/8 发布配置 mvn tomcat7:redeploy -->
-				<!-- <configuration> <url>http://wangyu001.vicp.cc:8080/manager/text</url> 
-					<username>admin</username> <password>jr2015</password> <path>/admins</path> 
-					</configuration> -->
-			</plugin>
-		</plugins>
-	</build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <!-- 忽略web.xml文件 -->
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <!-- Tomcat 插件 -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <!-- Tomcat 7/8 发布配置 mvn tomcat7:redeploy -->
+                <configuration> 
+                    <url>http://201.200.200.30:8080/manager/text</url> 
+                    <username>admin</username> 
+                    <password>jr2015</password> 
+                    <path>/backend</path> 
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
