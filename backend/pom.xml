@@ -32,7 +32,7 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>bower.cmd</executable>
+                            <executable>bower</executable>
                             <arguments>
                                 <argument>install</argument>
                             </arguments>
